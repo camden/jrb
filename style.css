@@ -1,3 +1,54 @@
 body {
   font-family: sans-serif;
+  font-size: 18px;
+  color: #434343;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.2;
+  margin-bottom: 0.5rem;
+  margin-top: 2rem;
+}
+
+p, ol {
+  line-height: 1.4;
+}
+
+a {
+  text-decoration-skip: ink;
+  font-weight: bolder;
+  color: green;
+
+  transition: all 120ms ease;
+}
+
+a:hover {
+  color: red;
+}
+
+.main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.fancy-text {
+  font-weight: bolder;
+  color: lightblue;
+}
+
+.interactive {
+  cursor: pointer;
+  font-weight: bolder;
+
+  transition: all 150ms ease;
+}
+
+.interactive:hover {
+  color: lightblue;
+}
+
+.filename {
+  font-family: monospace;
+  font-weight: bolder;
 }
