@@ -1,3 +1,3 @@
 function onButtonPress() {
-  alert('I love you! 😻');
+  alert(Happy Holidays!);
 }
