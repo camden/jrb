@@ -1,3 +1,3 @@
 function onButtonPress() {
-  alert(Happy Holidays!);
+  alert(Come back soon!);
 }
