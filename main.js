@@ -1,3 +1,3 @@
 function onButtonPress() {
-  alert(Come back soon!);
+  alert("Come back soon!");
 }
