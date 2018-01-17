@@ -1,7 +1,7 @@
-body {
-  font-family: sans-serif;
+body, content, header {
+  font-family: 'Lobster', 'Fjalla One';
   font-size: 18px;
-  color: #434343;
+  color: #86b300;
 }
 
 h1, h2, h3, h4, h5, h6 {
