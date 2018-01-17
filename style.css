@@ -1,9 +1,12 @@
-body, content, header, main h1, h2, h3, h4, h5, h6 {
-  font-family: 'Lobster', 'Fjalla One';
+body, content, header, main, h1{
+  font-family: 'Lobster', cursive;
   font-size: 18px;
   color: #86b300;
 }
-
+ h2{
+   font-family: 'Fjalla One', sans-serif;
+ }
+ 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   margin-bottom: 0.5rem;
