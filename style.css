@@ -4,6 +4,31 @@ body {
   color: #86b300;
 }
 
+
+/* Container holding the image and the text */
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size: 100px
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.fancy {
+  font-family: 'Lobster';
+  color: #8B728E;
+  font-size: 80px;
+  position: absolute;
+    right: 16px;
+}
+
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   margin-bottom: 0.5rem;
@@ -18,7 +43,7 @@ p, ol {
 a {
   text-decoration-skip: ink;
   font-weight: bolder;
-  color: green;
+  color: 461220;
 
   transition: all 120ms ease;
 }
@@ -36,7 +61,7 @@ a:hover {
 
 .fancy-text {
   font-weight: bolder;
-  color: lightblue;
+  color: 05A8AA;
 }
 
 .interactive {
@@ -55,6 +80,8 @@ a:hover {
   font-weight: bolder;
 }
 
+
+
 .mover {
   padding: 1rem 0;
   margin: 0;
@@ -71,10 +98,4 @@ a:hover {
 
 .move-meleft:hover {
   padding-left: 0;
-}
-
-.fancy {
-  font-family: 'Lobster';
-  color: red;
-  font-size: 100px;
 }
