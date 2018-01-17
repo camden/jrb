@@ -1,12 +1,9 @@
-body, content, header, main, h1{
-  font-family: 'Lobster', cursive;
+body {
+  font-family: 'Abel', sans-serif;
   font-size: 18px;
   color: #86b300;
 }
- h2{
-   font-family: 'Fjalla One', sans-serif;
- }
- 
+
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   margin-bottom: 0.5rem;
@@ -14,6 +11,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p, ol {
+  font-family: 'Anton', sans-serif;
   line-height: 1.4;
 }
 
@@ -55,4 +53,28 @@ a:hover {
 .filename {
   font-family: monospace;
   font-weight: bolder;
+}
+
+.mover {
+  padding: 1rem 0;
+  margin: 0;
+  transition: padding 450ms ease-out;
+}
+
+.move-me:hover {
+  padding-left: 140px;
+}
+
+.move-meleft {
+  padding-left: 140px;
+}
+
+.move-meleft:hover {
+  padding-left: 0;
+}
+
+.fancy {
+  font-family: 'Lobster';
+  color: red;
+  font-size: 100px;
 }
