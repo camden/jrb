@@ -141,7 +141,12 @@ a:active {
 
 .right {
   flex: 1 1 400px;
-  padding-left: 75px;
+}
+
+@media(min-width: 703px){
+  .right {
+    padding-left: 75px;
+  }
 }
 
 .left {
