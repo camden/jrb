@@ -1,41 +1,68 @@
 body {
+  color: #DCE5E8;
+  margin: 0;
   font-family: 'Abel', sans-serif;
-  font-size: 18px;
-  color: #86b300;
-}
-
-
-/* Container holding the image and the text */
-.container {
-  position: relative;
-  text-align: center;
-  color: white;
-  font-size: 100px
-}
-
-.centered {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-
-.fancy {
-  font-family: 'Lobster';
-  color: #8B728E;
-  font-size: 80px;
-  position: absolute;
-    right: 16px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  line-height: 1.2;
+   line-height: 1.0;
   margin-bottom: 0.5rem;
-  margin-top: 2rem;
+}
+::-moz-selection { /* Code for Firefox */
+  color: white;
+  background: #F19C79;
 }
 
-p, ol {
+::selection {
+  color: whitesmoke; 
+  background: #F19C79;
+}
+
+
+.main-image {
+max-width: 700px;
+height: 100%;
+}
+
+.image-container {
+  text-align: center;
+}
+
+
+.main-links {
+  text-align: left;
+  padding-left: 5rem;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+}
+
+
+h1 {
+  font-family: 'Lato';
+  text-transform: uppercase;
+  font-size: 60px; 
+}
+
+h2{
+  font-family: 'Roboto', sans-serif;
+  font-size: 42px;
+  color: #FAC9B8;
+}
+
+h3{
+  font-size: 21px;
+  color: lightblue;
+}
+h4{
+  font-size: 18px; 
+  color: #8B728E;
+} h5, h6, 
+
+p, ul{
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  color: lightgray;
+}
+
+other {
   font-family: 'Anton', sans-serif;
   line-height: 1.4;
 }
@@ -43,44 +70,58 @@ p, ol {
 a {
   text-decoration-skip: ink;
   font-weight: bolder;
-  color: 461220;
-
+  color:  #60495A;
   transition: all 120ms ease;
 }
 
 a:hover {
-  color: red;
+  color: #FAC9B8;
 }
 
+a:active {
+  color: #A2D6E8;
+}
+
+.mainmain {
+  padding-left: 5rem;
+}
 .main {
-  max-width: 640px;
+  max-width: 850px;
   margin: 0 auto;
   margin-bottom: 2rem;
   padding: 0 1rem;
 }
 
-.fancy-text {
-  font-weight: bolder;
-  color: 05A8AA;
+.footer {
+  text-align: right;
+}
+
+.fancy {
+  font-family: 'Lobster';
+  color: #8B728E;
+  font-size: 50px;
+    padding-right: 40px;
+}
+
+.fancy:hover {
+  color: lightblue;
+}
+
+}
+.fancy:active {
+  color: #FAC9B8;
 }
 
 .interactive {
   cursor: pointer;
   font-weight: bolder;
-
   transition: all 150ms ease;
-}
-
-.interactive:hover {
-  color: lightblue;
 }
 
 .filename {
   font-family: monospace;
   font-weight: bolder;
 }
-
-
 
 .mover {
   padding: 1rem 0;
@@ -92,10 +133,29 @@ a:hover {
   padding-left: 140px;
 }
 
-.move-meleft {
-  padding-left: 140px;
+.content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.move-meleft:hover {
-  padding-left: 0;
+.right {
+  flex: 1 1 400px;
+  padding-left: 75px;
+}
+
+.left {
+  flex: 1 1 130px;
+}
+
+.resume-header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding-top: 30px;
+}
+
+.name {
+  margin: 0;
+  margin-right: 100px;
 }
