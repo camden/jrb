@@ -248,7 +248,7 @@ max-width: 400px;
 }
 
 .biopix {
-  width: 30%;
+  max-width: 400px;
   text-align: right;
 }
 .amtitle {
@@ -258,6 +258,7 @@ max-width: 400px;
 
 .aboutmecontent {
   padding-left: 50px;
+  padding-right: 500px;
 }
 
 /* Styling dfn tag to highlight the word with the tooltip */
