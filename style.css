@@ -43,14 +43,6 @@ height: 100%;
   font-size: 3rem;
 }
 
-.naviglinks {
-  min-width: 400px;
-  background: #fff;
-  padding: 15px 20px;
-  border-radius: 5px;
-  box-shadow: 5px 7px 50px -20px goldenrod; 
-  display: flex;
-}
 
 .Resume, .Portfolio, .AboutMe {
 margin-right: 30px;
@@ -167,14 +159,6 @@ a:active {
   flex-wrap: wrap;
 }
 
-.right {
-  flex: 1 1 400px;
-}
-
-
-.left {
-  flex: 1 1 130px;
-}
 
 .resume-header {
   display: flex;
@@ -224,6 +208,16 @@ a:active {
   }
 
 }
+
+.right {
+  flex: 1 1 400px;
+}
+
+
+.left {
+  flex: 1 1 130px;
+}
+
 
 .slideshow-image {
   width: 100%;
@@ -278,57 +272,35 @@ max-width: 400px;
   justify-content: center;
 }
 
-.about-how {
-  background-color: palevioletred;
-  flex: 1;
+body {
+  height: 100vh;
 }
 
-.about-what {
-  background-color: lightblue;
-  flex: 1;
+.am-main-container {
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100%;
 }
 
-/* Styling dfn tag to highlight the word with the tooltip */
-dfn {
-  border-bottom: dashed 1px rgba(0,0,0,0.8);
-  padding: 0 0.4em;
-  cursor: help;
-  font-style: normal;
-  position: relative;
+.about-me-container {
+display: flex;
 }
 
-dfn::after {
-  content: attr(data-info);
-  display: inline;
-  position: absolute;
-  top: 22px;
-  left: 0;
-  opacity: 0;
-  width: 230px;
-  font-size: 13px;
-  font-weight: 700;
-  line-height: 1.5em;
-  padding: 0.5em 0.8em;
-  background: rgba(0,0,0,0.8);
-  color: #fff;
-  pointer-events: none;
-  transition: opacity 250ms, top 250ms;
+.about-me-desc-container {
+  display: flex;
+  align-items: center;
 }
-dfn::before {
-  content: '';
-  display: block;
-  position: absolute;
-  top: 12px;
-  left: 20px;
-  opacity: 0;
-  width: 0;
-  height: 0;
-  border: solid transparent 5px;
-  border-bottom-color: rgba(0,0,0,0.8);
-  transition: opacity 250ms, top 250ms;
+
+.about-me-desc {
+  padding-left: 25px;
+  max-width: 300px;
 }
-dfn:hover {z-index: 2;} /* Keeps the info boxes on top of other elements */
-dfn:hover::after,
-dfn:hover::before {opacity: 1;}
-dfn:hover::after {top: 30px;}
-dfn:hover::before {top: 20px;}
+
+nav {
+  padding: 18px;
+}
+
+.portfolio-content {
+  padding: 25px;
+}
