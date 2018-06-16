@@ -60,21 +60,30 @@ h2{
   font-family: 'Roboto', sans-serif;
   font-size: 42px;
   color: #FAC9B8;
+  line-height: 1.4
 }
 
 h3{
   font-size: 21px;
   color: lightblue;
+  line-height: 1.4
 }
 h4{
   font-size: 18px; 
   color: #8B728E;
-} h5, h6, 
+  line-height: 1.4
+} 
 
-p, ul{
+h5, h6, p, ul{
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   color: #A89BA5;
+  line-height: 1.4
+}
+
+.noteworthy {
+  font-size: 42px;
+  color: lightblue;
 }
 
 other {
@@ -87,6 +96,8 @@ a {
   font-weight: bolder;
   color:  #60495A;
   transition: all 120ms ease;
+  text-decoration: none;
+
 }
 
 a:hover {
@@ -156,7 +167,7 @@ a:active {
 .content {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 
@@ -168,18 +179,9 @@ a:active {
   justify-content: space-between;
 }
 
-.name {
-  margin: 0;
-  margin-right: 100px;
-}
 
 .info-link {
-  margin-bottom: 5px;
-  margin-top: 3px;
-}
-
-.personal-info {
-  margin-right: 30px;
+  padding-left: 20px;
 }
 
 
@@ -207,15 +209,6 @@ a:active {
     padding-left: 75px;
   }
 
-}
-
-.right {
-  flex: 1 1 400px;
-}
-
-
-.left {
-  flex: 1 1 130px;
 }
 
 
@@ -299,8 +292,139 @@ display: flex;
 
 nav {
   padding: 18px;
+  position: fixed;
+  right: 0;
 }
 
-.portfolio-content {
-  padding: 25px;
 }
+.portfolio-text {
+  text-align: right;
+  line-height: 1.75em;
+  text-align: left;
+  animation: fadein 4s;
+}
+
+.scholarjet {
+  padding-left: 50px;
+}
+
+.heading {
+  padding-bottom: 25px;
+  text-align: center;
+justify-content: center;
+margin: 0;
+}
+.heading-wrapper {
+  padding-top: 25px;
+}
+
+
+/* hoverstates on main page */
+
+.portfolio-wrapper {
+	width: 100%;
+	margin: 70px auto;
+	max-width: 700px;
+}
+.portfolio-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+figure {
+	flex: 0 1 49%;
+	position: relative;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+}
+figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	max-width: 100%;
+}
+figcaption {
+	padding: 20px;
+	color: #fff;
+	font-size: 18px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	top: auto;
+	bottom: 0;
+	padding: 16px;
+	height: 60px;
+	background-color: #fff;
+	color: #3c4a50;
+}
+.hover-effect .icon-links a ::before {
+	display: inline-block;
+	padding: 8px 10px;
+	speak: none;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+figure figcaption,
+figure figcaption > a {
+	position: absolute;
+	left: 0;
+	width: 100%;
+}
+.container figure figcaption > a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+}
+.hover-effect h2 {
+	float: left;
+}
+.hover-effect .icon-links a {
+	float: right;
+}
+
+
+/* Transition Styling */
+.hover-effect figcaption {
+	-webkit-transform: translate3d(0,100%,0);
+	transform: translate3d(0,100%,0);
+
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+.hover-effect .description {
+	position: absolute;
+	bottom: 150%;
+	padding: 20px;
+	color: #fff;
+	opacity: 0;
+	-webkit-backface-visibility: hidden; /* Fix for Chrome 37.0.2062.120 (Mac) */
+	
+	-webkit-transition: opacity 0.35s;
+	transition: opacity 0.35s;
+}
+
+.hover-effect h2,
+.hover-effect a {
+	-webkit-transform: translate3d(0,200%,0);
+	transform: translate3d(0,200%,0);
+
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+}
+
+
+/* Hover styles */
+.hover-effect:hover .description {
+	opacity: 1;
+}
+.hover-effect:hover figcaption,
+.hover-effect:hover h2,
+.hover-effect:hover p.icon-links a { 
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
