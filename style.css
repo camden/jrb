@@ -212,13 +212,14 @@ a:active {
 }
 
 
-.slideshow-image {
+ .stickers {
   width: 100%;
-  max-width: 300px;
+  max-width: 165px;
+  max-height: 220px;
   height: 100%;
 }
 
-.found-coffee, .hs,  .typeography-collage, .cow-collection {
+.slideshow-image, .found-coffee, .hs,  .typeography-collage, .cow-collection {
   width: 100%;
   max-width: 300px;
   height: 100%;
