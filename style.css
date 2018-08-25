@@ -183,6 +183,12 @@ a:active {
   justify-content: space-between;
 }
 
+@media(max-width: 700px) {
+  .content {
+    flex-direction: column;
+  }
+ 
+}
 
 .info-link {
   padding-left: 20px;
@@ -281,8 +287,15 @@ height: 100%;
 }
 
 .about-me-container {
-display: flex;
+  display: flex;
 }
+
+@media(max-width: 700px) {
+  .about-me-container {
+    flex-direction: column;
+  }
+}
+
 
 .about-me-desc-container {
   display: flex;
@@ -291,6 +304,11 @@ display: flex;
 
 .about-me-desc {
   padding-left: 25px;
+  max-width: 300px;
+}
+
+.about-me-image {
+  width: 100%;
   max-width: 300px;
 }
 
