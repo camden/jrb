@@ -226,7 +226,6 @@ a:active {
 .slideshow-image, .found-coffee, .hs,  .typeography-collage, .cow-collection {
   width: 100%;
   max-width: 300px;
-  height: 100%;
 }
 
 .long, .found-coffee-anim{
