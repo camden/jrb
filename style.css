@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   color: #BAD3DB;
   margin: 0;
@@ -331,7 +335,9 @@ margin: 0;
 .portfolio-wrapper {
 	width: 100%;
 	margin: 70px auto;
-	max-width: 700px;
+  max-width: 700px;
+  padding: 0 20px;
+  
 }
 .portfolio-container {
 	display: flex;
